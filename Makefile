@@ -1,8 +1,19 @@
 all: test
 
-clean: clean_test
+clean:
+	@if [ -e cpputest/Makefile_using_MakefileWorker ]; \
+	then make clean_test; \
+	else make clean_release; \
+	fi
 
 clean_all: clean cpputest_clean
+
+### for release build
+release: clean
+	make -f build/release.mk
+
+clean_release:
+	make -i -f build/release.mk clean
 
 ### for test code
 test: cpputest cpputest_ext
