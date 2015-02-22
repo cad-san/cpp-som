@@ -5,7 +5,7 @@ COMPONENT_NAME = cpp_som
 CPPUTEST_HOME = cpputest
 CPP_PLATFORM = gcc
 PROJECT_HOME_DIR = .
-SCRIPT_DIR = $(PROJECT_HOME_DIR)/scripts
+SCRIPT_DIR = $(PROJECT_HOME_DIR)/build/scripts
 
 SRC_DIRS = \
 	$(PROJECT_HOME_DIR)/src\

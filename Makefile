@@ -25,6 +25,13 @@ gcov: cpputest cpputest_ext clean
 clean_test:
 	make -i -f build/test.mk clean
 
+### utility
+format:
+	make -i -f build/utility.mk uncrustify
+
+check:
+	make -i -f build/utility.mk cppcheck
+
 ### for cpputest
 cpputest: cpputest/lib/libCppUTest.a
 
