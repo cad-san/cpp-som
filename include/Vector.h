@@ -21,6 +21,11 @@ public:
         return basis_ - value.get();
     }
 
+    template <typename ScalarType>
+    Vector operator*( const ScalarType& value ) const {
+        return basis_ * value;
+    }
+
     /* コピー・ムーブはpublic default属性 */
     Vector(Vector const&) = default;
     Vector(Vector&&) = default;
