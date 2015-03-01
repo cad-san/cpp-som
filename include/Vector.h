@@ -13,6 +13,12 @@ public:
         return basis_;
     }
 
+    /* コピー・ムーブはpublic default属性 */
+    Vector(Vector const&) = default;
+    Vector(Vector&&) = default;
+    Vector& operator =(Vector const&) = default;
+    Vector& operator =(Vector&&) = default;
+
     ~Vector() = default;
 
 private:
