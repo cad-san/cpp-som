@@ -29,3 +29,13 @@ TEST(IntVector, Add)
 
     LONGS_EQUAL( 30, c.get() );
 }
+
+TEST(IntVector, Sub)
+{
+    auto a = Som::Vector<int>( 10 );
+    auto b = Som::Vector<int>( 20 );
+
+    auto c = a - b;
+
+    LONGS_EQUAL( -10, c.get() );
+}
