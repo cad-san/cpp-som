@@ -13,6 +13,10 @@ public:
         return basis_;
     }
 
+    Vector operator+( const Vector& value ) const {
+        return basis_ + value.get();
+    }
+
     /* コピー・ムーブはpublic default属性 */
     Vector(Vector const&) = default;
     Vector(Vector&&) = default;
