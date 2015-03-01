@@ -48,3 +48,12 @@ TEST(IntVector, MultiScalar)
 
     LONGS_EQUAL( 100, b.get() );
 }
+
+TEST(IntVector, DivScalar)
+{
+    auto a = Som::Vector<int>( 10 );
+
+    auto b = a / 10;
+
+    LONGS_EQUAL( 1, b.get() );
+}
