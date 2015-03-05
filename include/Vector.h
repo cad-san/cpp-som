@@ -43,6 +43,12 @@ private:
     BasisType basis_;
 };
 
+template <typename BasisType>
+BasisType abs( const Vector<BasisType>& value )
+{
+    return abs( value.get() );
+}
+
 }
 
 #endif

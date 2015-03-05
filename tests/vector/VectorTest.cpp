@@ -1,5 +1,6 @@
 #include "CppUTest/TestHarness.h"
 
+#include "VectorTest.h"
 #include "Vector.h"
 #include <string>
 
@@ -57,3 +58,11 @@ TEST(IntVector, DivScalar)
 
     LONGS_EQUAL( 1, b.get() );
 }
+
+TEST(IntVector, CalcAbs)
+{
+    auto a = Som::Vector<int>( -10 );
+
+    LONGS_EQUAL( 10, abs(a) );
+}
+
