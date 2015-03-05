@@ -7,6 +7,10 @@ namespace Som {
 int abs( int a ) {
     return std::abs(a);
 }
+
+int cross( int a, int b ) {
+    return a * b;
+}
 }
 
 #endif

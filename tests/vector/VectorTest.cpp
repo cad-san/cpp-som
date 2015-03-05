@@ -66,3 +66,12 @@ TEST(IntVector, CalcAbs)
     LONGS_EQUAL( 10, abs(a) );
 }
 
+TEST(IntVector, Cross)
+{
+    auto a = Som::Vector<int>( 10 );
+    auto b = Som::Vector<int>( 20 );
+
+    auto c = cross(a, b);
+
+    LONGS_EQUAL( 200, c );
+}

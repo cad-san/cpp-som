@@ -49,6 +49,12 @@ BasisType abs( const Vector<BasisType>& value )
     return abs( value.get() );
 }
 
+template <typename BasisType>
+BasisType cross( const Vector<BasisType>& a, const Vector<BasisType>& b )
+{
+    return cross( a.get(), b.get() );
+}
+
 }
 
 #endif
