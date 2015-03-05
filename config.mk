@@ -12,6 +12,7 @@ SRC_DIRS = \
 
 TEST_SRC_DIRS = \
 	$(PROJECT_HOME_DIR)/tests\
+	$(PROJECT_HOME_DIR)/tests/vector\
 
 INC_DIRS = \
 	$(PROJECT_HOME_DIR)/include\
